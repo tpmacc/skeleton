@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: skeleton
+
+# expose actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    info:
+      enabled: true
+
+# configure span reporter
+opentracing:
+  jaeger:
+    udp-sender:
+      host: localhost
+      port: 6831
