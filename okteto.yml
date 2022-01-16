@@ -3,6 +3,6 @@ image: okteto/maven
 command: ["mvn", "spring-boot:run" ]
 workdir: /app
 environment:
-  - ENV_VARIABLE=okteto
+  - skel.envvar=okteto
 forward:
-  - 8080:8080
+  - 9001:9001
