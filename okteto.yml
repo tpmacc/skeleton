@@ -1,0 +1,8 @@
+name: skeleton-service
+image: okteto/maven
+command: ["mvn", "spring-boot:run" ]
+workdir: /app
+environment:
+  - ENV_VARIABLE=okteto
+forward:
+  - 8080:8080
