@@ -15,7 +15,7 @@ spec:
       terminationGracePeriodSeconds: 0
       containers:
         - name: api
-          image: tpmacc/skeleton
+          image: tpmacc/skeleton-service
           imagePullPolicy: Always
           ports:
             - containerPort: 9001
